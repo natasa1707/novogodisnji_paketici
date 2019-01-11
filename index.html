@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novogodišnji paketići</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <header>
+        <img src="ukrasi.png" alt="ukrasi">
+        <h1>NOVOGODIŠNJI PAKETIĆI</h1>
+
+    </header>
+    <main>
+        <table class="tabela1">
+            <tr>
+                <td>Ime:</td>
+                <td><input type="text" id="ime"></td>
+                <td>Pol:</td>
+                <td class="gender">
+                    <input id="muski" type="radio" name="gender" value="male"> Muški<br>
+                    <input id="zenski" type="radio" name="gender" value="female"> Ženski<br></td>
+            </tr>
+            
+            <tr>
+
+                <td></td>
+                <td>Vrednost poklona do (RSD):</td>
+
+                <td>
+                    <select id="vrednost">
+                        <option value="2000">2000</option>
+                        <option value="2500">2500</option>
+                        <option value="3000">3000</option>
+
+                    </select>
+                </td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td colspan="4"> <input class="dugme" type="button" value="Izaberi poklon" id="dugmeArtikli"></td>
+
+            </tr>
+        </table>
+        <table id="tabela2">
+            <tr>
+                <td></td>
+                <td>Cena:</td>
+                <td>Količina:</td>
+                <td>Ukupno:</td>
+            </tr>
+            <tr>
+                <td>Lopta:</td>
+                <td><input id="cena1" type="text" value="750" readonly></td>
+                <td><input id="kol1" type="number" min="0" value="0"></td>
+                <td><input id="ukupno1" type="text" value="0"></td>
+            </tr>
+            <tr>
+                    <td>Novogodišnji ukrasi:</td>
+                    <td><input id="cena2" type="text" value="400" readonly></td>
+                    <td><input id="kol2" type="number" min="0" value="0"></td>
+                    <td><input id="ukupno2" type="text" value="0"></td>
+            </tr>
+            <tr>
+                    <td>Slatkiši:</td>
+                    <td><input id="cena3" type="text" value="400" readonly></td>
+                    <td><input id="kol3" type="number" min="0" value="0"></td>
+                    <td><input id="ukupno3" type="text" value="0"></td>
+            </tr>
+            <tr>
+                    <td>Lutka:</td>
+                    <td><input class="lutka" id="cena4" type="text" value="1100" readonly></td>
+                    <td><input class="lutka"  id="kol4" type="number" min="0" value="0"></td>
+                    <td><input class="lutka"  id="ukupno4" type="text" value="0"></td>
+            </tr>
+            <tr>
+                    <td>Automobil:</td>
+                    <td><input class="auto" id="cena5" type="text" value="1100" readonly></td>
+                    <td><input class="auto" id="kol5" type="number" min="0" value="0"></td>
+                    <td><input class="auto" id="ukupno5" type="text" value="0"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input class="dugme" type="button" value="Potvrdi kupovinu" id="dugmeKupi"></td>
+                <td></td>
+                <td><input class="dugme" type="button" value="Odustani" id="dugmeOdustati"></td>
+            </tr>
+        </table>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
